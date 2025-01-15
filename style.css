@@ -652,7 +652,7 @@
         }
 
         header {
-            padding: 0.5rem 1rem;
+            padding: 1rem 5rem;
             gap: 8rem;
         }
 
@@ -688,6 +688,14 @@
 
 
     }
+
+        @media(max-width:480px) {
+
+        header {
+            padding: 1rem 1rem;
+        }
+        }
+            
 
 
     /*
