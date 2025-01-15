@@ -268,51 +268,6 @@
         }
     }
 
-
-
-
-
-    /* Education */
-
-.education-container {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    
-    
-}
-
-.education-info {
-    flex: 1;
-    
-}
-/*
-.education-image {
-    flex: 0 0 300px;
-    text-align: center;
-    
-}
-    */
-
-/*
-.education-image img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-    */
-    .education-image{
-        margin-left:-10px;
-    }
-    .education-image img{
-        width: 40vw;
-        border-radius: 3rem;
-    }
-
-
-       
-
     /* Skiils */
 
 /* Skills Section */
@@ -369,8 +324,66 @@
 
     }
 
+    .experience-info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5rem;
+    }
+
+    .experience img {
+        width: 24vw;
+        border-radius: 3rem;
+        transition: width 0.3s ease;
+
+    }
+
+    .experience img:hover {
+        width: 29vw;
+        border-radius: 3rem;
+        transition: 0.35s width;
+    }
 
 
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .grid-card {
+        border: 2px solid black;
+        border-radius: 3rem;
+        padding: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        justify-content: center;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+
+    }
+
+    .grid-card:hover {
+        transform: scale(1.02);
+        background-color: black;
+        color: white;
+    }
+
+    .grid-card i {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        ;
+    }
+
+    .grid-card span {
+        font-size: 1.5rem;
+        font-weight: 500;
+        background: linear-gradient(to right, #009dff, #ff00ff);
+        background-clip: text;
+        color: transparent;
+
+    }
 
     ::-webkit-scrollbar {
         width: 20px;
@@ -574,7 +587,7 @@
     @media(max-width:768px) {
         header {
             gap: 1rem;
-            padding: 0.5rem 1rem;
+            padding: 1rem 1rem;
 
         }
 
@@ -620,73 +633,68 @@
     }
 
 
-        @media(max-width:600px) {
-            header #menu-icon {
-                display: none;
-            }
-    
-            .nav-links {
-                position: absolute;
-                top: 100%;
-                margin-top: 1rem;
-                width: 100%;
-                padding: 1rem;
-                color: white;
-                display: flex;
-                flex-direction: column;
-                text-align: center;
-                background-color: rgba(0, 0, 0, 0.9);
-                border-radius: 3rem;
-                display: none;
-            }
-    
-            .nav-links li {
-                margin-top: 1.5rem;
-                padding: 1rem;
-    
-            }
-    
-            .nav-links.active {
-                display: block;
-            }
-    
-            header {
-                display: none;
-            }
-    
-            header .logo {
-                display: none;            }
-    
-            .about-container img {
-                width: 80vw;
-            }
-    
-            .input-box input {
-                padding: 0.5rem 3rem;
-                width: 80%;
-                font-size: 1.5rem;
-            }
-    
-            footer ul {
-                gap: 1rem;
-            }
-    
-            .skills-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-    
-            .skill-card {
-                width: 150px;
-                height: 200px;
-            }
-    
+    @media(max-width:600px) {
+        header #menu-icon {
+            display: none;
         }
 
+        .nav-links {
+            position: absolute;
+            top: 100%;
+            margin-top: 1rem;
+            width: 100%;
+            padding: 1rem;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.9);
+            border-radius: 3rem;
+            display: none;
+        }
 
+        .nav-links li {
+            margin-top: 1.5rem;
+            padding: 1rem;
 
+        }
 
+        .nav-links.active {
+            display: block;
+        }
 
+        header {
+            padding: 1rem 5rem;
+            gap: 8rem;
+        }
 
+        header .logo {
+            font-size: 1.5rem;
+        }
+
+        .about-container img {
+            width: 80vw;
+        }
+
+        .input-box input {
+            padding: 0.5rem 3rem;
+            width: 80%;
+            font-size: 1.5rem;
+        }
+
+        footer ul {
+            gap: 1rem;
+        }
+        .skills-grid {
+        grid-template-columns: repeat(2, 1fr); /* 3 items per row on mobile */
+    }
+
+    .skill-card {
+        width: 150px; /* Reduce the size of the skill cards */
+        height: 200px; /* Adjust the height of the skill cards */
+    }
+
+    }
 
     /*
     Contact form
@@ -755,41 +763,3 @@ body.dark-mode {
 .dark-mode .btn {
     background-color: #555555;
 }
-.dark-mode h2{
-    color: white;
-}
-
-.dark-mode footer ul li a {
-    color: white;
-}
-
-
-
-/*
-Style
-*/
-.theme-toggle-btn{
-    background-color: white
-}
-#sun-icon,
-#moon-icon {
-    transition: opacity 0.3s ease;
-}
-
-body.dark-mode #sun-icon {
-    opacity: 0;
-}
-
-body.light-mode #moon-icon {
-    opacity: 0;
-}
-
-.btn a {
-    color: black;
-    text-decoration: none;
-}
-
-.job-journey-image{
-    height: 175px;
-}
-
