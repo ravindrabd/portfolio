@@ -659,7 +659,9 @@
                         }
     
             .about-container img {
-                width: 80vw;
+                
+               transition: none;
+
             }
     
             .input-box input {
@@ -683,6 +685,9 @@
            .education-image{
               display: none;
     
+        }
+   
+
         }
 
 
