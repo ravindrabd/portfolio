@@ -651,13 +651,11 @@
             }
     
             header {
-                padding: 1rem 5rem;
-                gap: 8rem;
+                display: none;
             }
     
             header .logo {
-                font-size: 1.5rem;
-            }
+                display: none;            }
     
             .about-container img {
                 width: 80vw;
