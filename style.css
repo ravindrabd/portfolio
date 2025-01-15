@@ -664,9 +664,9 @@
             transition: none; 
         }
 
-        .about-container img {4
-            transition: none;
-            /* width: 80vw;*/
+        .about-container img {
+             transition: none; 
+             width: 80vw;
         }
 
         .input-box input {
