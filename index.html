@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ravindra B Devabhaktuni - Web Developer & Programmer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo"><span>Ravindra B Devabhaktuni</span></a>
+
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            
+        </ul>
+
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+
+        <button class="visit-btn" onclick="redirectToGithub()">Visit Github</button>
+
+        <button id="theme-toggle" class="theme-toggle-btn" onclick="toggleTheme()">
+            <i class="fa-solid fa-sun" id="sun-icon"></i>
+            <i class="fa-solid fa-moon" id="moon-icon" style="opacity: 0;"></i>
+        </button>
+    </header>
+
+    <section id="about" class="about">
+        <div class="about-container">
+            <img src="MyPic.png" alt="">
+
+            <div class="info-box">
+                <div class="text">
+                    <h3> Hi, I'm </h3>
+                    <h1>
+                        <span class="name-cls">R</span>
+                        <span class="name-cls">a</span>
+                        <span class="name-cls">v</span>
+                        <span class="name-cls">i</span>
+                        <span class="name-cls">n</span>
+                        <span class="name-cls">d</span>
+                        <span class="name-cls">r</span>
+                        <span class="name-cls">a</span>
+                    </h1>
+                    <span id="role" style="color: red;">Frontend Developer</span>
+                </div>
+                <div class="btn-group">
+                    <a href="Ravindra.pdf" class="btn" download="Ravindra_Resume.pdf">Download CV</a>
+                    <div class="btn"><a href="#contact">Hire me</a></div>
+                </div>
+
+                <div class="socials">
+                    <a href="https://github.com/rbdeva" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/rbdevabhaktuni/" target="_blank"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education -->
+<section id="education" class="education">
+    <h2 class="section-title">Education</h2>
+    <div class="education-container">
+        <div class="education-info">
+            <div class="education-card">
+                <h3>Master of Science in Computer Science</h3>
+                <p>Binghamton University, State University of New York <em>(Public Ivy)</em></p>
+                <p>Jan 2023 - May 2024</p>
+                <p><strong>GPA:</strong> 3.51/4.00</p>
+            </div>
+            <br>
+            <div class="education-card">
+                <h3>Bachelor of Technology in Computer Science</h3>
+                <p>KL University</p>
+                <p>Aug 2018 - May 2022</p>
+                <p><strong>GPA:</strong> 4.00/4.00</p>
+            </div>
+        </div>
+        <div class="education-image">
+            <img src="education-image.svg" alt="Education" />
+        </div>
+    </div>
+</section>
+
+
+
+
+    <section id="skills" class="skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card"><i class="fa-brands fa-java"></i><span>Java</span></div>
+            <div class="skill-card"><i class="fa-brands fa-python"></i><span>Python</span></div>
+            <div class="skill-card"><i class="fa-brands fa-html5"></i><span>HTML</span></div>
+            <div class="skill-card"><i class="fa-brands fa-css3-alt"></i><span>CSS</span></div>
+            <div class="skill-card"><i class="fa-brands fa-js"></i><span>JavaScript</span></div>
+            <div class="skill-card"><i class="fa-brands fa-react"></i><span>ReactJS</span></div>
+            <div class="skill-card"><i class="fa-brands fa-node"></i><span>NodeJS</span></div>
+            <div class="skill-card"><i class="fa-brands fa-js"></i><span>Express</span></div>
+            <div class="skill-card"><i class="fa-solid fa-database"></i><span>MongoDB</span></div>
+            <div class="skill-card"><i class="fa-solid fa-database"></i><span>SQL</span></div>
+            <div class="skill-card"><i class="fa-brands fa-docker"></i><span>Docker</span></div>
+            <div class="skill-card"><i class="fa-brands fa-docker   "></i><span>Kubernetes</span></div>
+            <div class="skill-card"><i class="fa-solid fa-check-circle"></i><span>Jasmine</span></div>
+            <div class="skill-card"><i class="fa-brands fa-github"></i><span>Git/GitHub</span></div>
+            <div class="skill-card"><i class="fa-solid fa-code"></i><span>VSCode</span></div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2 class="section-title"> Recent Projects </h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="BuzzTalk.png" alt="">
+                <h3> BuzzTalk</h3>
+                <p>A real-time chat app with live messaging and user authentication using Node.js, Socket.io, and React.</p>
+                <div class="btn-group">
+                    <button class="btn" onclick="redirectToGithub1()">Project Link</button>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="JobJourney.png" alt="" class="job-journey-image">
+                <h3> My Job Journey</h3>
+                <p>A full-stack MERN application to manage job applications and interviews, built with React, Node.js, Express, and MongoDB</p>
+                <div class="btn-group">
+                    <button class="btn" onclick="redirectToGithub2()">Project Link</button>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="Amazon.png" alt="">
+                <h3> Amazon Clone</h3>
+                <p>An Amazon clone built with JavaScript, implementing product listings and a shopping cart, with Jasmine
+                for unit testing</p>
+                <div class="btn-group">
+                    <button class="btn" onclick="redirectToGithub3()">Project Link</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="input-box">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="mailto:rdevabhaktun@binghamton.edu" class="contact-link">Email: rdevabhaktun@binghamton.edu</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <a href="https://www.linkedin.com/in/rbdevabhaktuni/" class="contact-link" target="_blank">LinkedIn
+                        </a>
+                </div>
+            </div>
+
+            <!-- Email input and submit form -->
+            <form id="emailForm" action="https://formspree.io/f/mjkkzwwv" method="POST" onsubmit="handleSubmit(event)">
+                <div class="form-group">
+                    <label for="userEmail">Your Email:</label>
+                    <input type="email" id="userEmail" name="userEmail" placeholder="Enter your email" required>
+                </div>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+            <div id="formMessage"></div> 
+        </div>
+    </section>
+
+    <footer>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <p class="copyright">cc @ Ravindra</p>
+    </footer>
+
+    <script>
+        function redirectToGithub() {
+            window.open("https://github.com/rbdeva", "_blank");
+        }
+        function redirectToGithub1() {
+            window.open("https://github.com/rbdeva/BuzzTalk", "_blank");
+        }
+        function redirectToGithub2() {
+            window.open("https://github.com/rbdeva/JobJourney", "_blank");      
+           }
+        function redirectToGithub3() {
+            window.open("https://github.com/rbdeva/Amazon-clone", "_blank");
+            }
+      
+            
+
+        const form = document.getElementById('emailForm');
+        form.addEventListener('submit', function (event) {
+            event.preventDefault(); 
+
+            
+            const submitButton = form.querySelector('button[type="submit"]');
+            submitButton.disabled = true;
+
+        
+            const formData = new FormData(form);
+
+            
+            const xhr = new XMLHttpRequest();
+            xhr.open("POST", form.action, true);
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4) {
+                    const messageElement = document.getElementById("formMessage");
+                    if (xhr.status === 200) {
+                        
+                        alert("Thank you! I will contact you soon.");
+                        window.location.href = "rbdeva.github.io"; 
+                    } else {
+                        let Message = "Thank you! I will contact you soon.";
+                        if (xhr.status === 400) {
+                            Message = "There was a problem with the form submission. Please check your input.";
+                        } else if (xhr.status === 500) {
+                            Message = "Server error. Please try again later.";
+                        }
+                        messageElement.innerHTML = `<p>${Message}</p>`;
+                        messageElement.style.color = "red";
+                    }
+                }
+            };
+            xhr.send(formData);  
+        });
+
+        let roleIndex = 0;
+        const roles = ["Frontend Developer", "Backend Developer", "MERN Stack Developer", "Full Stack Developer"];
+        const roleElement = document.getElementById('role');
+
+        setInterval(() => {
+            roleElement.textContent = roles[roleIndex];
+            roleIndex = (roleIndex + 1) % roles.length; 
+        }, 1000); 
+
+        function toggleTheme() {
+            const body = document.body;
+            body.classList.toggle("dark-mode");
+            body.classList.toggle("light-mode");
+
+            const sunIcon = document.getElementById('sun-icon');
+            const moonIcon = document.getElementById('moon-icon');
+            if (body.classList.contains("dark-mode")) {
+                sunIcon.style.opacity = "0";
+                moonIcon.style.opacity = "1";
+                localStorage.setItem('theme', 'dark');
+            } else {
+                sunIcon.style.opacity = "1";
+                moonIcon.style.opacity = "0";
+                localStorage.setItem('theme', 'light');
+            }
+        }
+
+        window.onload = function () {
+            const savedTheme = localStorage.getItem('theme');
+            const sunIcon = document.getElementById('sun-icon');
+            const moonIcon = document.getElementById('moon-icon');
+            if (savedTheme === 'dark') {
+                document.body.classList.add('dark-mode');
+                document.body.classList.remove('light-mode');
+                sunIcon.style.opacity = "0";
+                moonIcon.style.opacity = "1";
+            } else {
+                document.body.classList.add('light-mode');
+                document.body.classList.remove('dark-mode');
+                sunIcon.style.opacity = "1";
+                moonIcon.style.opacity = "0";
+            }
+        }
+    </script>
+</body>
+
+</html>
